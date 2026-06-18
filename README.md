@@ -27,7 +27,9 @@ MATLAB functions for the supraglacial melt lake parameterizations from [Grau et 
 
 ## Other 
 
-[SNM_nc.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/SNM_nc.m) - Integrated Snow Melt Flux from [Trusel et al., (2015)](https://www.nature.com/articles/ngeo2563) and [Seroussi et al., (2024)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024EF004561)
+[SNM_nc.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/SNM_nc.m) - Integrated Snow Melt Flux from [Trusel et al., (2015)](https://www.nature.com/articles/ngeo2563) and [Seroussi et al., (2024)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024EF004561) spatial interpolated to ISSM Mesh. 
+
+[RoughnessMeshConfig.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/RoughnessMeshConfig.m) - Statistical surface roughness parameters from [Grau et al., (2025)](https://www.nature.com/articles/s41467-025-61798-8) spatially interpolated to ISSM Mesh.
 
 [SGL_Params.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/SGLParams.m) - Calculating statistical supraglacial meltwater depth and lake depth forcings
 
