@@ -1,6 +1,6 @@
 # transient-antarctic-meltlakes
 
-Code to reproduce Grau et al. (2026) Preprint.  Danielle K. Grau, Mattia Poinelli, Nicole Jeane Schlegel, Helene Seroussi, and Alexander A. Robel Accelerated Antarctic Ice Loss in Simulations with Calving Driven by Hydrofracture under Supraglacial Melt Lakes, 19 June 2025, PREPRINT (Version 1) available at TBD.
+Code to reproduce Grau et al. (2026) Preprint.  Danielle K. Grau, Mattia Poinelli, Nicole Jeane Schlegel, Helene Seroussi, and Alexander A. Robel Accelerated Antarctic Ice Loss in Simulations with Calving Driven by Hydrofracture under Supraglacial Melt Lakes, 22 June 2026, PREPRINT (Version 1) available at TBD.
 
 ## [Grau2025-SGLParams](https://github.com/dgrau13/transient-antarctic-meltlakes/tree/main/Grau2025_SGLParams)
 
