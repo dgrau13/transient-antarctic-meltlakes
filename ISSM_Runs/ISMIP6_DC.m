@@ -22,8 +22,8 @@ if perform(org,'ISMIP6TransientCrevasse')
 md = loadmodel(org,'Antarctic2.RunUKESM_SSP585Calving');
 load("/storage/project/r-arobel3-0/dgrau7/ISSM_Runs/surface_snow_melt_UKESM1-0-LL_1850-2300_ISMIP6Mesh.mat")
 
-md.timestepping.time_step = 1/12.;
-md.settings.output_frequency = 12;
+md.timestepping.time_step = 1/24.;
+md.settings.output_frequency = 24;
 md.calving = calvingcrevassedepth();
 md.calving.crevasse_threshold =1;
 md.calving.crevasse_opening_stress = 1;
