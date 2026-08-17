@@ -20,8 +20,8 @@ mycluster = pace('numnodes',numnodes,'np',coresrequested,'login','dgrau7','codep
 if perform(org,'ISMIP6_WL')
 md = loadmodel(org,'Antarctic2.RunUKESM_SSP585Calving');
 load("/storage/project/r-arobel3-0/dgrau7/ISSM_Runs/ISMIP6_SGLParams.mat")
-md.timestepping.time_step = 1/12.;
-md.settings.output_frequency = 12;
+md.timestepping.time_step = 1/6.;
+md.settings.output_frequency = 6;
 md.calving = calvingcrevassedepth();
 md.calving.crevasse_threshold =1;
 md.calving.crevasse_opening_stress = 1;
