@@ -19,8 +19,7 @@ mean_wd = [mean_wd; time];
 %Calculations
 loadmodel('Antarctic2.RunUKESM_SSP585Calving')
 plotmodel(md,'data',mean_wl(1:end-1,1),'colormap',cmocean('ice'),'colorbarYlabel','Mean Lake Depth (m)','caxis#1',[0 1], ...
-    'data',mean_F(1:end-1,1),'colormap',cmocean('ice'),'colorbarYlabel','Mean Area Fraction','caxis#2',[0 0.15], ...
-    'data',mean_wd(1:end-1,1),'colormap',cmocean('ice'),'colorbarYlabel','Mean Water Depth (m)','caxis#3',[0 1])
+    'data',mean_wd(1:end-1,1),'colormap',cmocean('ice'),'colorbarYlabel','Mean Water Depth (m)','caxis#2',[0 1])
 %%
 %Export Calculated Supraglacial Melt Lake Parameters
 save("ISMIP6_SGLParams","mean_wl","mean_wd");
