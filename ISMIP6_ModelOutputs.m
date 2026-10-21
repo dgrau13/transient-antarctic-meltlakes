@@ -24,24 +24,6 @@ md_dc.water_height = md.calving.water_height;
 clear md
 save("ISMIP6_DC.mat","md_dc","-v7.3")
 
-%KF - Kill Floating 
-loadmodel('ISMIP6BasalForcing500m');
-md_kf.IceVolume = [md.results.TransientSolution(:).IceVolume];
-md_kf.time = [md.results.TransientSolution(:).time];
-md_kf.IceVolumeAboveFloatation = [md.results.TransientSolution(:).IceVolumeAboveFloatation];
-md_kf.Thickness = [md.results.TransientSolution(:).Thickness];
-md_kf.FloatingIceArea = [md.results.TransientSolution(:).FloatingArea];
-md_kf.mask = md.mask.ice_levelset;
-md_kf.icelevelset= [md.results.TransientSolution(:).MaskIceLevelset];
-md_kf.oceanlevelset = [md.results.TransientSolution(:).MaskOceanLevelset];
-md_kf.BasalForcingsFloatingIceMeltRate = [md.results.TransientSolution(:).BasalforcingsFloatingiceMeltingRate];
-md_kf.SMB = [md.results.TransientSolution(:).SmbMassBalance];
-md_kf.surface = [md.results.TransientSolution(:).Surface];
-md_kf.base = [md.results.TransientSolution(:).Base];
-md_kf.time_step = md.timestepping.time_step;
-clear md
-save("ISMIP6_KF.mat","md_kf","-v7.3")
-
 %SNM - Snow Melt Flux
 loadmodel('ISMIP6TransientSNM_dynamic');
 md_snm.IceVolume = [md.results.TransientSolution(:).IceVolume];
@@ -101,6 +83,23 @@ md_wd.time_step = md.timestepping.time_step;
 md_wd.water_height = md.calving.water_height;
 save("ISMIP6_WD.mat","md_wd","-v7.3")
 clear md
+
+%UB - UpperBound Calving
+loadmodel('ISMIP6Crevasse_UBH');
+md_ub.IceVolume = [md.results.TransientSolution(:).IceVolume];
+md_ub.time = [md.results.TransientSolution(:).time];
+md_ub.IceVolumeAboveFloatation = [md.results.TransientSolution(:).IceVolumeAboveFloatation];
+md_ub.Thickness = [md.results.TransientSolution(:).Thickness];
+md_ub.FloatingIceArea = [md.results.TransientSolution(:).FloatingArea];
+md_ub.mask = md.mask.ice_levelset;
+md_ub.icelevelset= [md.results.TransientSolution(:).MaskIceLevelset];
+md_ub.oceanlevelset = [md.results.TransientSolution(:).MaskOceanLevelset];
+md_ub.BasalForcingsFloatingIceMeltRate = [md.results.TransientSolution(:).BasalforcingsFloatingiceMeltingRate];
+md_ub.SMB = [md.results.TransientSolution(:).SmbMassBalance];
+md_ub.surface = [md.results.TransientSolution(:).Surface];
+md_ub.base = [md.results.TransientSolution(:).Base];
+md_ub.time_step = md.timestepping.time_step;
+save("ISMIP6_UBH.mat","md_ub","-v7.3")
 
 %NC - No Calving 
 loadmodel('Antarctic2.RunUKESM_SSP585Calving');
