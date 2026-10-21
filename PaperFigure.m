@@ -125,8 +125,6 @@ FloatArea.ub = md_ub.FloatingIceArea(end)/1000^2;
 
 %%
 %∆Ice Thickness (t=2301) from DC
-isoline(md,md_nc.icelevelset(:,end),'value',0,'output','NC_IceFront2301.exp');
-isoline(md,md_dc.icelevelset(:,end),'value',0,'output','DC_IceFront2301.exp');
 isoline(md,md_snm.icelevelset(:,end),'value',0,'output','SNM_IceFront2301.exp');
 isoline(md,md_wd.icelevelset(:,end),'value',0,'output','WD_IceFront2301.exp');
 isoline(md,md_wl.icelevelset(:,end),'value',0,'output','WL_IceFront2301.exp');
