@@ -1,6 +1,6 @@
 # transient-antarctic-meltlakes
 
-Code to reproduce Grau et al. (2026) Preprint.  Danielle K. Grau, Mattia Poinelli, Nicole Jeane Schlegel, Helene Seroussi, and Alexander A. Robel Accelerated Antarctic Ice Loss in Simulations with Calving Driven by Hydrofracture under Supraglacial Melt Lakes, 22 June 2026, PREPRINT (Version 1) available at TBD.
+Code to reproduce Grau et al. (2026) Preprint.  Danielle K. Grau, Mattia Poinelli, Nicole Jeane Schlegel, Helene Seroussi, and Alexander A. Robel Accelerated Antarctic Ice Loss in Simulations with Calving Driven by Hydrofracture under Supraglacial Melt Lakes, 22 June 2026, PREPRINT (Version 2) available at TBD.
 
 ## [Grau2025-SGLParams](https://github.com/dgrau13/transient-antarctic-meltlakes/tree/main/Grau2025_SGLParams)
 
@@ -15,7 +15,7 @@ MATLAB functions for the supraglacial melt lake parameterizations from [Grau et 
 
 [ISMIP6_DC.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/ISSM_Runs/ISMIP6_DC.m) - ISSM Run Script for Dry Crevasse Calving Scenario
 
-[ISMIP6_KF.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/ISSM_Runs/ISMIP6_KF.m) - ISSM Run Script for Kill Floating Ice Calving Scenario
+[ISMIP6_UBH.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/ISSM_Runs/ISMIP6_UBH.m) - ISSM Run Script for Upper Bound Hydrofracture Ice Calving Scenario
 
 [ISMIP6_NC.m](https://github.com/dgrau13/transient-antarctic-meltlakes/blob/main/ISSM_Runs/ISMIP6_NC.m) - ISSM Run Script for Negligible Calving Scenario
 
